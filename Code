@@ -23,7 +23,7 @@ x_pravo, y_pravo = pyautogui.position()[0], pyautogui.position()[1]
 print("The point through which the ball falls, just below the middle")
 time.sleep(3)
 x_centr, y_centr = pyautogui.position()[0], pyautogui.position()[1]
-print("<Space> - stop")
+print("Button 'spase' stops code")
 while True:
     pix = pyautogui.pixel(x_centr, y_centr)
     if pix in [(227, 35, 34), (244, 229, 0), (0, 142, 91), (42, 113, 176), (241, 142, 28), (109, 57, 139)] and pyautogui.pixel(x_1, y_1) != pix:
