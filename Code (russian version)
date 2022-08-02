@@ -1,0 +1,39 @@
+import pyautogui
+import keyboard
+import time
+print("Ссылка на игру: https://yandex.ru/games/app/153326")
+time.sleep(2)
+print("Передвиньте курсор мыши в нужное мест")
+time.sleep(1)
+print("Верхний сектор шестиугольника")
+time.sleep(3)
+x_1, y_1 = pyautogui.position()[0], pyautogui.position()[1]
+print("Следующий сектор по часовой стрелке")
+time.sleep(3)
+x_2, y_2 = pyautogui.position()[0], pyautogui.position()[1]
+print("Следующий сектор по часовой стрелке")
+time.sleep(3)
+x_3, y_3 = pyautogui.position()[0], pyautogui.position()[1]
+print("Левая кнопка")
+time.sleep(3)
+x_levo, y_levo = pyautogui.position()[0], pyautogui.position()[1]
+print("Правая нопка")
+time.sleep(3)
+x_pravo, y_pravo = pyautogui.position()[0], pyautogui.position()[1]
+print("Точка чуть ниже середины, через которую проходит шарик")
+time.sleep(3)
+x_centr, y_centr = pyautogui.position()[0], pyautogui.position()[1]
+print("Кнопка 'spase' oстанавливает программу")
+while True:
+    pix = pyautogui.pixel(x_centr, y_centr)
+    if pix in [(227, 35, 34), (244, 229, 0), (0, 142, 91), (42, 113, 176), (241, 142, 28), (109, 57, 139)] and pyautogui.pixel(x_1, y_1) != pix:
+        if pix in [pyautogui.pixel(x_2, y_2), pyautogui.pixel(x_3, y_3)]:
+            while pyautogui.pixel(x_1, y_1) != pix :
+                    pyautogui.moveTo(x_levo, y_levo)
+                    pyautogui.click()
+        else:
+            while pyautogui.pixel(x_1, y_1) != pix :
+                pyautogui.moveTo(x_pravo, y_pravo)
+                pyautogui.click()
+    if keyboard.is_pressed('space'):
+        break
