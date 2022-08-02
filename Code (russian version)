@@ -1,4 +1,4 @@
-import pyautogui
+import pyautogui    
 import keyboard
 import time
 print("Ссылка на игру: https://yandex.ru/games/app/153326")
