@@ -22,7 +22,7 @@ x_levo, y_levo = pyautogui.position()[0], pyautogui.position()[1]
 print("Правая нопка")
 time.sleep(3)
 x_pravo, y_pravo = pyautogui.position()[0], pyautogui.position()[1]
-print("Точка по середине под надписью 'Игра окончена'")
+print("Точка по середине под надписью 'Игра закончена'")
 time.sleep(3)
 x_centr, y_centr = pyautogui.position()[0], pyautogui.position()[1]
 print("Кнопка 'spase' oстанавливает программу")
