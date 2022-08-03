@@ -3,6 +3,8 @@ import keyboard
 import time
 print("Ссылка на игру: https://yandex.ru/games/app/153326")
 time.sleep(2)
+print("Совеую поиграть несколько раз самим")
+time.sleep(2)
 print("Передвиньте курсор мыши в нужное мест")
 time.sleep(1)
 print("Верхний сектор шестиугольника")
@@ -20,7 +22,7 @@ x_levo, y_levo = pyautogui.position()[0], pyautogui.position()[1]
 print("Правая нопка")
 time.sleep(3)
 x_pravo, y_pravo = pyautogui.position()[0], pyautogui.position()[1]
-print("Точка чуть ниже середины, через которую проходит шарик")
+print("Точка по середине под надписью 'Игра окончена'")
 time.sleep(3)
 x_centr, y_centr = pyautogui.position()[0], pyautogui.position()[1]
 print("Кнопка 'spase' oстанавливает программу")
